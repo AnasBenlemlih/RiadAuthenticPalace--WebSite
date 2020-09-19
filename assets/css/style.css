@@ -4390,8 +4390,9 @@ h6 {
 
 .generic-blockquote {
   padding: 30px 50px 30px 30px;
-  background: #f9f9ff;
-  border-left: 2px solid #222222; }
+  background: #cf3939;
+  border-left: 2px solid #222222;
+color: #fff; }
 
 .progress-table-wrap {
   overflow-x: scroll; }
@@ -5019,6 +5020,7 @@ h6 {
 
 .mb-30 {
   margin-bottom: 30px; }
+
 
 .mt-30 {
   margin-top: 30px; }
