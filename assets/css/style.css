@@ -1795,7 +1795,6 @@ label {
 @media (max-width: 767px) {
   .header-area {
     padding: 18px 0; } }
-
 .main-header {
   position: relative;
   z-index: 3; }
@@ -5027,3 +5026,40 @@ color: #fff; }
 
 .switch-wrap {
   margin-bottom: 10px; }
+
+
+
+  .les_services{
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .les_services h3 {
+      text-align: center;
+      color: #000;
+      font-size: 62px;
+      font-weight: 600;
+      font-family: 'Conv_Barkentina' !important;
+      padding-bottom: 50px;
+      background: url(../../assets/img/logo/images-motif.png) no-repeat center bottom;
+  }
+  
+  .les_services .un_service{
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .les_services .un_service h4, .les_services .un_service h4 a{
+      text-align: center;
+      color: #000;
+      font-size: 30px;
+      font-weight: 600;
+      font-family: 'Conv_Barkentina' !important;
+  }
+  .les_services .un_service img{
+       width: 60%;
+  
+  }
+  
