@@ -1,6 +1,6 @@
 <?php
 
-    $to = "riadauthenticpalace@gmail.com";
+    $to = "anas.benlemlih@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -8,6 +8,17 @@
 	$cmessage = $_REQUEST['message'];
 	$cmobile = $_REQUEST['mobile'];
 	$pays = $_REQUEST['Pays'];
+
+
+	$datepicker1 = $_REQUEST['datepicker1'];
+	$datepicker2 = $_REQUEST['datepicker2'];
+	$adult = $_REQUEST['select1'];
+	$Children = $_REQUEST['select2'];
+	$Rooms = $_REQUEST['select3'];
+
+
+
+
 
     $headers = "From: $from";
 	$headers = "From: " . $from . "\r\n";
@@ -24,8 +35,18 @@
 	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
 	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
 	$body .= "</tr><tr>";
+	
 	$body .= "<td style='border:none;'><strong>Num:</strong> {$cmobile}</td>";
 	$body .= "<td style='border:none;'><strong>Pays:</strong> {$pays}</td>";
+
+	$body .= "<td style='border:none;'><strong>Check In Date:</strong> {$datepicker1}</td>";
+	$body .= "<td style='border:none;'><strong>Check OutDate:</strong> {$datepicker2}</td>";
+
+	$body .= "<td style='border:none;'><strong>adult:</strong> {$adult}</td>";
+	$body .= "<td style='border:none;'><strong>Children:</strong> {$Children}</td>";
+	$body .= "<td style='border:none;'><strong>Rooms:</strong> {$Rooms}</td>";
+
+	
 	$body .= "</tr>";
 	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$subject}</td></tr>";
 	$body .= "<tr><td></td></tr>";
