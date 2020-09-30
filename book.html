@@ -95,7 +95,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
+                                <a href="book.html" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
                         </div>
                          <!-- logo -->
@@ -117,7 +117,7 @@
 
     <!-- slider Area Start-->
     <div class="slider-area">
-        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/contact_hero.jpg" >
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/roompage_hero.jpg" >
             <div class="container">
                 <div class="row ">
                     <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
@@ -140,17 +140,16 @@
                         <h2 class="contact-title">Book Online</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="book_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="form-contact contact_form" action="book_process.php" method="post" id="bookform" novalidate="novalidate">
                             <div class="booking-wrap d-flex justify-content-between align-items-center">
-                 
-                                <!-- select in date -->
+                                 <!-- select in date -->
                                 <div class="single-select-box mb-30">
                                     <!-- select out date -->
                                     <div class="boking-tittle">
                                         <span> Check In Date:</span>
                                     </div>
                                     <div class="boking-datepicker">
-                                        <input id="datepicker1"  placeholder="10/12/2020" />
+                                        <input id="datepicker1" name="d1" placeholder="10/12/2020" />
                                     </div>
                                </div>
                                 <!-- Single Select Box -->
@@ -160,67 +159,60 @@
                                         <span>Check OutDate:</span>
                                     </div>
                                     <div class="boking-datepicker">
-                                        <input id="datepicker2"  placeholder="12/12/2020" />
+                                        <input id="datepicker2" name="d2" placeholder="12/12/2020" />
                                     </div>
                                </div>
-                                <!-- Single Select Box -->
+                               <div class="single-select-box mb-30">
+                               
+                                </div>
+                              
                                 <div class="single-select-box mb-30">
-                                    <div class="boking-tittle">
-                                        <span>Adults:</span>
-                                    </div>
-                                    <div class="select-this">
-                                    
-                                            <div class="select-itms">
-                                                <select name="select" id="select1">
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                </select>
-                                            </div>
-                                      
-                                    </div>
-                               </div>
-                                <!-- Single Select Box -->
+                               
+                                </div>
                                 <div class="single-select-box mb-30">
-                                    <div class="boking-tittle">
-                                        <span>Children:</span>
-                                    </div>
-                                    <div class="select-this">
-                                        
-                                            <div class="select-itms">
-                                                <select name="select" id="select2">
-                                                    <option value="">0</option>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                </select>
-                                            </div>
-                                       
-                                    </div>
-                               </div>
-                                <!-- Single Select Box -->
+                               
+                                </div>
                                 <div class="single-select-box mb-30">
-                                    <div class="boking-tittle">
-                                        <span>Rooms:</span>
-                                    </div>
-                                    <div class="select-this">
-                                        
-                                            <div class="select-itms">
-                                                <select name="select" id="select3">
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                </select>
-                                            </div>
-                                       
-                                    </div>
-                               </div>
+                               
+                                </div>
+                                <div class="single-select-box mb-30">
+                               
+                                </div>
+                                <div class="single-select-box mb-30">
+                               
+                                </div>
+                                <div class="single-select-box mb-30">
+                               
+                                </div>
                               
                             </div>
                             <div class="row">
+
+                                <div class="col-sm-2">
+                                    <div class="boking-tittle">
+                                        <span>Adults:</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="select1" id="select1" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adults:'" placeholder="Adults:">
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="boking-tittle">
+                                        <span>Children:</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="select2" id="select2" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Children:'" placeholder="Children:">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="boking-tittle">
+                                        <span>Rooms:</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="select3" id="select3" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rooms:'" placeholder="Rooms:">
+                                    </div>
+                                </div>
+                               
                              
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -373,7 +365,7 @@
         <script src="./assets/js/jquery.magnific-popup.js"></script>
 
         <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/book.js"></script>
         <script src="./assets/js/jquery.form.js"></script>
         <script src="./assets/js/jquery.validate.min.js"></script>
         <script src="./assets/js/mail-script.js"></script>
@@ -385,6 +377,31 @@
         
 
         <script>
+         function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            var s1 = getParameterByName('select1');
+            var s2 = getParameterByName('select2');
+            var s3 = getParameterByName('select3');
+   
+        
+
+          document.addEventListener('DOMContentLoaded', function() {
+            
+
+          document.getElementById("select1").value = s1;
+          document.getElementById('select2').value = s2;
+          document.getElementById("select3").value = s3;
+
+            }, false);
+ 
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',
             disableDaysOfWeek: [0, 0],
@@ -403,6 +420,7 @@
          format: 'HH.MM'
      });
         </script>
+   
     </body>
     
     </html>

@@ -10,12 +10,13 @@
 	$pays = $_REQUEST['Pays'];
 
 
-	$datepicker1 = $_REQUEST['datepicker1'];
-	$datepicker2 = $_REQUEST['datepicker2'];
-	$adult = $_REQUEST['select1'];
-	$Children = $_REQUEST['select2'];
-	$Rooms = $_REQUEST['select3'];
-
+	$datepicker1 = $_REQUEST['d1'];
+	$datepicker2 = $_REQUEST['d2'];
+	$adult = $_REQUEST['selecta'];
+	$Children = $_REQUEST['selectc'];
+	$Rooms = $_REQUEST['selectr'];
+	echo $datepicker1;
+	echo $datepicker2;
 
 
 
@@ -54,6 +55,6 @@
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
 
-    $send = mail($to, $subject, $body, $headers);
+	$send = mail($to, $subject, $body, $headers);
 
 ?>
