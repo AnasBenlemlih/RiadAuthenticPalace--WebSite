@@ -1,6 +1,6 @@
 <?php
 
-    $to = "anas.benlemlih@gmail.com";
+    $to = "riadauthenticpalace@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -10,13 +10,18 @@
 	$pays = $_REQUEST['Pays'];
 
 
-	$datepicker1 = $_REQUEST['d1'];
-	$datepicker2 = $_REQUEST['d2'];
-	$adult = $_REQUEST['selecta'];
-	$Children = $_REQUEST['selectc'];
-	$Rooms = $_REQUEST['selectr'];
+	$datepicker1 = $_REQUEST['datepicker1'];
+	$datepicker2 = $_REQUEST['datepicker2'];
+	$adult = $_REQUEST['select1'];
+	$Children = $_REQUEST['select2'];
+	$Rooms = $_REQUEST['select3'];
+
+	
 	echo $datepicker1;
 	echo $datepicker2;
+	echo $adult;
+	echo $Children;
+	echo $Rooms;
 
 
 
@@ -29,6 +34,9 @@
 
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
+	
+	$body .= "<h1>nouvelle réservation </h1>";
+	
 	$body .= "<table style='width: 100%;'>";
 	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
 	
@@ -39,10 +47,12 @@
 	
 	$body .= "<td style='border:none;'><strong>Num:</strong> {$cmobile}</td>";
 	$body .= "<td style='border:none;'><strong>Pays:</strong> {$pays}</td>";
-
+	$body .= "</tr><tr>";
+	$body .= "<h1>détails : </h1>";
+	$body .= "</tr><tr>";
 	$body .= "<td style='border:none;'><strong>Check In Date:</strong> {$datepicker1}</td>";
 	$body .= "<td style='border:none;'><strong>Check OutDate:</strong> {$datepicker2}</td>";
-
+	$body .= "</tr><tr>";
 	$body .= "<td style='border:none;'><strong>adult:</strong> {$adult}</td>";
 	$body .= "<td style='border:none;'><strong>Children:</strong> {$Children}</td>";
 	$body .= "<td style='border:none;'><strong>Rooms:</strong> {$Rooms}</td>";

@@ -92,7 +92,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Réservation</a>
+                                <a href="bookfr.html" class="btn btn1 d-none d-lg-block ">Réservation</a>
                             </div>
                         </div>
                          <!-- logo -->
@@ -162,7 +162,7 @@
             <div class="container">
                <div class="row ">
                <div class="col-12">
-                <form action="">
+                <form action="bookfr.html" method="GET">
                 <div class="booking-wrap d-flex justify-content-between align-items-center">
                  
                     <!-- select in date -->
@@ -172,7 +172,7 @@
                             <span> Date d'arrivée:</span>
                         </div>
                         <div class="boking-datepicker">
-                            <input id="datepicker1"  placeholder="10/12/2020" />
+                            <input id="datepicker1" name="datepicker1" placeholder="10/12/2020" />
                         </div>
                    </div>
                     <!-- Single Select Box -->
@@ -182,7 +182,7 @@
                             <span>Date de départ:</span>
                         </div>
                         <div class="boking-datepicker">
-                            <input id="datepicker2"  placeholder="12/12/2020" />
+                            <input id="datepicker2" name="datepicker2" placeholder="12/12/2020" />
                         </div>
                    </div>
                     <!-- Single Select Box -->
@@ -191,16 +191,15 @@
                             <span>Adultes:</span>
                         </div>
                         <div class="select-this">
-                            <form action="#">
+                         
                                 <div class="select-itms">
-                                    <select name="select" id="select1">
+                                    <select name="select1" id="select1">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                         <option value="4">4</option>
                                     </select>
                                 </div>
-                            </form>
                         </div>
                    </div>
                     <!-- Single Select Box -->
@@ -209,9 +208,9 @@
                             <span>Enfants:</span>
                         </div>
                         <div class="select-this">
-                            <form action="#">
+                          
                                 <div class="select-itms">
-                                    <select name="select" id="select2">
+                                    <select name="select2" id="select2">
                                         <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -219,7 +218,7 @@
                                         <option value="4">4</option>
                                     </select>
                                 </div>
-                            </form>
+                        
                         </div>
                    </div>
                     <!-- Single Select Box -->
@@ -228,21 +227,19 @@
                             <span>Pièces:</span>
                         </div>
                         <div class="select-this">
-                            <form action="#">
                                 <div class="select-itms">
-                                    <select name="select" id="select3">
+                                    <select name="select3" id="select3">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                         <option value="4">4</option>
                                     </select>
                                 </div>
-                            </form>
                         </div>
                    </div>
                     <!-- Single Select Box -->
                     <div class="single-select-box pt-45 mb-30">
-                        <a href="bookfr.html" class="btn select-btn">Reserve maintenant</a>
+                        <input style="color: white; background-color: goldenrod; padding: 13px; border-radius: 18%;" type="submit" value="Reserve maintenant" />
                    </div>
                
 

@@ -94,13 +94,13 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Réservation</a>
+                                <a href="bookfr.html" class="btn btn1 d-none d-lg-block ">Réservation</a>
                             </div>
                         </div>
                          <!-- logo -->
                          <div class="col-xl-1 col-lg-1">
                             <div class="logo">
-                               <a href="contact.html"><img src="assets/img/logo/en.png" alt=""></a>
+                               <a href="book.html"><img src="assets/img/logo/en.png" alt=""></a>
                             </div>
                         </div>
                         <!-- Mobile Menu -->
@@ -132,82 +132,153 @@
 
     <!-- ================ contact section start ================= -->
     <section class="contact-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="contact-title">Contact</h2>
-                    </div>
-                    <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="mobile" id="mobile" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Mobile'" placeholder="Enter your Mobile">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="Pays" id="Pays" type="Pays" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email Pays'" placeholder="Pays">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Envoyer Le Message</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-3 offset-lg-1">
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-home"></i></span>
-                            <div class="media-body">
-                                <h3>16 Bis, Derb Bennis Douh Batha,</h3>
-                                <p> Fès El Bali - 30200 Fès - MAROC</p>
-                            </div>
-                        </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                            <div class="media-body">
-                                <h3>GSM : +212 661 50 49 17</h3>
-                            <h3>  GSM : +212 661 15 93 48</h3>
-                                <p>Du lundi au vendredi de 9h à 18h</p>
-                            </div>
-                        </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-email"></i></span>
-                            <div class="media-body">
-                                <h3>riadauthenticpalace@gmail.com</h3>
-                                <p>Envoyez-nous votre demande à tout moment!</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="contact-title">Réservation</h2>
                 </div>
-                <div class="c6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d413.1781878256286!2d-4.978789075969317!3d34.0586051034992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f8b893b711635%3A0x7bed80ad398e9763!2sRiad%20authentic%20palace%20%26%20spa!5e0!3m2!1sfr!2sma!4v1600432617234!5m2!1sfr!2sma" width="100%" height="352" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <div class="col-lg-8">
+                    <form class="form-contact contact_form" action="book_process.php" method="post" id="bookform" novalidate="novalidate">
+                        <div class="booking-wrap d-flex justify-content-between align-items-center">
+                             <!-- select in date -->
+                            <div class="single-select-box mb-30">
+                                <!-- select out date -->
+                                <div class="boking-tittle">
+                                    <span> Date d'arrivée:</span>
+                                </div>
+                                <div class="boking-datepicker">
+                                    <input id="datepicker1" name="datepicker1" placeholder="10/12/2020" />
+                                </div>
+                           </div>
+                            <!-- Single Select Box -->
+                            <div class="single-select-box mb-30">
+                                <!-- select out date -->
+                                <div class="boking-tittle">
+                                    <span>Date de départ:</span>
+                                </div>
+                                <div class="boking-datepicker">
+                                    <input id="datepicker2" name="datepicker2" placeholder="12/12/2020" />
+                                </div>
+                           </div>
+                           <div class="single-select-box mb-30">
+                           
+                            </div>
+                          
+                            <div class="single-select-box mb-30">
+                           
+                            </div>
+                            <div class="single-select-box mb-30">
+                           
+                            </div>
+                            <div class="single-select-box mb-30">
+                           
+                            </div>
+                            <div class="single-select-box mb-30">
+                           
+                            </div>
+                            <div class="single-select-box mb-30">
+                           
+                            </div>
+                            <div class="single-select-box mb-30">
+                           
+                            </div>
+                          
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-2">
+                                <div class="boking-tittle">
+                                    <span>Adultes:</span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control valid" name="select1" id="select1" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adultes:'" placeholder="Adultes:">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="boking-tittle">
+                                    <span>Enfants:</span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control valid" name="select2" id="select2" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enfants:'" placeholder="Enfants:">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="boking-tittle">
+                                    <span>Pièces:</span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control valid" name="select3" id="select3" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Pièces:'" placeholder="Pièces:">
+                                </div>
+                            </div>
+                           
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre Message'" placeholder=" Votre Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Votre name'" placeholder="Votre name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre Adresse Email'" placeholder="Votre Adresse Email">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="mobile" id="mobile" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre Numero Mobile'" placeholder="Votre Numero Mobile">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="Pays" id="Pays" type="Pays" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre Pays'" placeholder="Votre Pays">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Sujet'" placeholder="Sujet">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="button button-contactForm boxed-btn">Envoyer Le Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <div class="media-body">
+                            <h3>16 Bis, Derb Bennis Douh Batha,</h3>
+                            <p> Fès El Bali - 30200 Fès - MAROC</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <div class="media-body">
+                            <h3>GSM : +212 661 50 49 17</h3>
+                        <h3>  GSM : +212 661 15 93 48</h3>
+                            <p>Du lundi au vendredi de 9h à 18h</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <div class="media-body">
+                            <h3>riadauthenticpalace@gmail.com</h3>
+                            <p>Envoyez-nous votre demande à tout moment!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    <!-- ================ contact section end ================= -->
-    
+            <div class="c6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d413.1781878256286!2d-4.978789075969317!3d34.0586051034992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f8b893b711635%3A0x7bed80ad398e9763!2sRiad%20authentic%20palace%20%26%20spa!5e0!3m2!1sfr!2sma!4v1600432617234!5m2!1sfr!2sma" width="100%" height="352" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </section>
+<!-- ================ contact section end ================= -->
+
     <footer>
         <!-- Footer Start-->
         <div class="footer-area black-bg footer-padding">
@@ -291,7 +362,7 @@
         <script src="./assets/js/jquery.magnific-popup.js"></script>
 
         <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/book.js"></script>
         <script src="./assets/js/jquery.form.js"></script>
         <script src="./assets/js/jquery.validate.min.js"></script>
         <script src="./assets/js/mail-script.js"></script>
@@ -303,6 +374,38 @@
         
 
         <script>
+               function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            var s1 = getParameterByName('select1');
+            var s2 = getParameterByName('select2');
+            var s3 = getParameterByName('select3');
+            var d1 = getParameterByName('datepicker1');
+            var d2 = getParameterByName('datepicker2');
+
+        
+
+          document.addEventListener('DOMContentLoaded', function() {
+            
+
+          document.getElementById("select1").value = s1;
+          document.getElementById('select2').value = s2;
+          document.getElementById("select3").value = s3;
+
+          document.getElementById("datepicker1").value = d1;
+          document.getElementById("datepicker2").value = d2;
+
+
+
+            }, false);
+ 
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',
             disableDaysOfWeek: [0, 0],
