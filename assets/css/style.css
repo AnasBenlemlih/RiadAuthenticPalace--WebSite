@@ -2391,7 +2391,7 @@ label {
   text-align: center; }
   .font-back-tittle .archivment-front {
     position: relative;
-    z-index: 9; }
+   }
   .font-back-tittle .archivment-front h3 {
     color: #112e41;
     font-size: 50px;
